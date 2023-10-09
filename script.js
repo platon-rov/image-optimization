@@ -214,7 +214,7 @@ const generateCode = (
     export const fallbackImageUrl = ${fallbackImage ?? "''"}
   `;
   const preloadCode = {
-    import: "\n\n" + `import { preloadImages } from 'shared/utils/image'`,
+    import: "\n\n" + `import { preloadImages } from '../preload-images'`,
     fn: "\n\n" + "preloadImages(config)",
   };
 
